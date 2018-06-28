@@ -33,3 +33,18 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# tell pelican-bootstrap3 theme where to find our header and avatar
+STATIC_PATHS = ['images']
+BANNER = "images/header.jpg"
+AVATAR = "images/avatar.jpg"
+
+# below because pelican-bootstrap3 theme expects i18n plugin
+PLUGIN_PATHS = ['./plugins/pelican-plugins', ]
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
+THEME = './themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'darkly'
