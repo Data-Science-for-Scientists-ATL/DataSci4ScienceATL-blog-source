@@ -20,14 +20,18 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Our Github org page',
+		  'https://github.com/Data-Science-for-Scientists-ATL'),
+         ('Atlanta BEST program (original sponsor)',
+          'http://best.emory.edu/index.html'),
+         ('PyData Atlanta',
+          'https://www.meetup.com/PyData-Atlanta/'),
+         ('Atlanta Jupyter Users Group',
+          'https://www.meetup.com/Atlanta-Jupyter-User-Group/'),
+        )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('@DataSci4ScienceATL', '#'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -47,4 +51,4 @@ JINJA_ENVIRONMENT = {
 }
 
 THEME = './themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'darkly'
+BOOTSTRAP_THEME = 'spacelab'
