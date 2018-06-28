@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Quick and Easy Data Science Websites - Data Science For Scientists ATL</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/quick-and-easy-data-science-websites.html">
+
+        <meta name="author" content="David Nicholson" />
+        <meta name="description" content="Quick and Easy Data Science Websites At our last meeting, I gave a demo of how to make websites about what you&#39;re up to in data science. My demo followed the method that Jake Vanderplas uses, and that other famous totally awesome data scientists use, such as Christine Doig, and …" />
+
+        <meta property="og:site_name" content="Data Science For Scientists ATL" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Quick and Easy Data Science Websites"/>
+        <meta property="og:url" content="/quick-and-easy-data-science-websites.html"/>
+        <meta property="og:description" content="Quick and Easy Data Science Websites At our last meeting, I gave a demo of how to make websites about what you&#39;re up to in data science. My demo followed the method that Jake Vanderplas uses, and that other famous totally awesome data scientists use, such as Christine Doig, and …"/>
+        <meta property="article:published_time" content="2018-06-27" />
+            <meta property="article:section" content="test" />
+            <meta property="article:author" content="David Nicholson" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.spacelab.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Data Science For Scientists ATL            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/category/test.html">Test</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/quick-and-easy-data-science-websites.html"
+                       rel="bookmark"
+                       title="Permalink to Quick and Easy Data Science Websites">
+                        Quick and Easy Data Science Websites
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2018-06-27T00:00:00+02:00"> Wed 27 June 2018</time>
+    </span>
+
+
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>Quick and Easy Data Science Websites</h1>
+<p>At our last meeting, I gave a demo of how to make websites about what you're up to in data science. My demo followed the method that Jake Vanderplas uses, and that other famous totally awesome data scientists use, such as Christine Doig, and, uh, me. To be meta, I am now writing a blog post about that demo of how to make a blog. And to be even more meta, I made a website for our group by following my own demo. This blog post includes, as a bonus, stuff I remembered and/or figured out as I went through the process of setting up this site.</p>
+<h2>high-level overview</h2>
+<p>Here's a high-level overview of how this will work, in list form.</p>
+<ol>
+<li><strong>follow instructions for set up</strong></li>
+<li><strong>write your posts</strong></li>
+<li><strong>follow instructions to update after you write post</strong></li>
+<li>tweet out your blog posts and hope someone reads them</li>
+<li>repeat steps 2 through 4 as needed</li>
+<li>...</li>
+<li>become a famous data scientist (sexiest job, 2014-present)</li>
+<li>publish a book and / or start a podcast, e.g. "Make Your Own Data Science Playing Cards From Scratch"</li>
+</ol>
+<p>Some of the items in the list are more tongue-in-cheek then others.</p>
+<h2>instructions for set up</h2>
+<p>Apparently I like lists. Here's another! I'll give detail for each step below. Note again that my instructions here are based on the Jake Vanderplas approach, as he outlines in <a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/">this blog post</a> and in the README for the source code for his blog, which he has helpfully made public in a <a href="https://github.com/jakevdp/jakevdp.github.io-source">Github repository</a>.</p>
+<ol>
+<li>make sure you have git installed for version control, and so you can take advantage of Github</li>
+<li>make a virtual environment for the software libraries you'll use to blog</li>
+<li>pelican: a static website generator written in Python</li>
+<li>jupyter to create notebooks</li>
+<li>ghp-import: a script that lets you use Github Pages to host your site by doing all the work for you</li>
+<li>some other tools that make it easy to use pelican and jupyter (Markdown, etc.)</li>
+<li>set up a folder that will contain your blog, and initialize a git repository inside it</li>
+<li>use <code>pelican-quickstart</code> command to quickly start a project (your blog)</li>
+</ol>
+<p>None of the items in that list were tongue-in-cheek. I wouldn't want to try your patience.<br>
+Okay, let's walk through each step in more detail.  </p>
+<ol>
+<li>
+<p>make sure you have git installed (us</p>
+</li>
+<li>
+<p>... and install the software libraries you'll use (with pip)</p>
+</li>
+</ol>
+<p>(pelican-blog) $ pip install pelican Markdown ghp-import
+ing conda)
+<code>$ conda install git</code></p>
+<ol>
+<li>make an environment (using conda) ...</li>
+</ol>
+<div class="highlight"><pre><span></span>$ conda create -n pelican-blog <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6 jupyter notebook
+$ <span class="nb">source</span> activate pelican-blog
+</pre></div>
+
+
+<p>... and install the software libraries you'll use (with pip)</p>
+<p><code>(pelican-blog) $ pip install pelican Markdown ghp-import</code></p>
+<ol>
+<li>create a directory that will contain your blog, and initialize a git repository inside it</li>
+</ol>
+<div class="highlight"><pre><span></span>(pelican-blog) $ mkdir your-blog
+(pelican-blog) $ cd your-blog
+(pelican-blog) $ git init
+</pre></div>
+
+
+<p>Below are a couple more steps you need to execute <em>inside</em> the directory after you create it, although they fall under the category of "install the software libraries you'll use"</p>
+<div class="highlight"><pre><span></span>(pelican-blog) $ git submodule add https://github.com/danielfrg/pelican-ipynb
+(pelican-blog) $ git submodule add https://github.com/getpelican/pelican-plugins
+</pre></div>
+
+
+<p>What you're doing here is some git voodoo that, as I understand it, makes these plugins part of your repository, but in such a way that you could still pull from them if their maintainers made some changes to the code.
+Recent versions of git should get the actual code from these repos off Github and put it inside your local copy. But you might need to update your submodules, for example if you copy your own blog's repo off your Github profile onto another computer besides the one where you started the repo. In that case git doesn't pull in the code automatically so you need to execute:
+<code>git submodule update --init --recursive</code></p>
+<ol>
+<li>use <code>pelican-quickstart</code> command to quickly start a project (your blog)
+<code>(pelican-blog) $ pelican-quickstart</code>
+Pelican will ask you a series questions about your site. You can safely accept all the defaults by just hitting enter--everything in this tutorial should work with those defaults.</li>
+</ol>
+<h2>write your posts</h2>
+<p>I like to write in Markdown, like so ...</p>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="p">:</span> <span class="n">Red</span><span class="p">,</span> <span class="n">A</span> <span class="n">Network</span> <span class="n">Analysis</span> <span class="n">Library</span>
+<span class="n">Date</span><span class="p">:</span> <span class="mi">2018</span><span class="o">-</span><span class="mo">06</span><span class="o">-</span><span class="mi">27</span>
+<span class="n">Category</span><span class="p">:</span> <span class="n">test</span>
+
+<span class="c1">## Introduction</span>
+<span class="n">I</span> <span class="n">just</span> <span class="n">released</span> <span class="n">the</span> <span class="n">first</span> <span class="n">version</span> <span class="n">of</span> <span class="n">a</span> <span class="p">[</span><span class="n">network</span> <span class="n">analysis</span> <span class="n">library</span><span class="p">,</span> <span class="n">Red</span><span class="p">](</span><span class="n">github</span><span class="o">/</span><span class="n">YourUserName</span><span class="o">/</span><span class="n">red</span><span class="o">.</span><span class="n">git</span><span class="p">)</span><span class="o">.</span>    
+
+<span class="c1">## How-To</span>
+<span class="n">Here</span><span class="s1">&#39;s an example script in Python:</span>
+<span class="sb">``</span><span class="err">`</span><span class="n">Python</span>
+<span class="kn">import</span> <span class="nn">red</span>
+
+<span class="n">twitter_data</span> <span class="o">=</span> <span class="n">red</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">twitter</span>
+<span class="n">red</span> <span class="o">=</span> <span class="n">RedCreador</span><span class="p">(</span><span class="n">twitter_data</span><span class="p">)</span>
+</pre></div>
+
+
+<p>... although hardcore Pythonistas have the option of writing in RestructuredText.</p>
+<h3>instructions to update after you write your post</h3>
+<ol>
+<li>
+<p>use pelican to convert your Markdown post into html that browsers know how to read
+<code>(pelican-blog) $ pelican content -o output -s pelicanconf.py</code></p>
+</li>
+<li>
+<p>use ghp-import to publish your Pelican site on Github, as either a Project Page or a User Page</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="n">pelican</span><span class="o">-</span><span class="n">blog</span><span class="p">)</span> <span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span>
+<span class="p">(</span><span class="n">pelican</span><span class="o">-</span><span class="n">blog</span><span class="p">)</span> <span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+
+
+<p>For a User Page, you need to "push" the content from the output directory to the master branch of a repository named Username.github.io. (So you should make one, replacing Username with your actual user name on Github,)
+Github automagically converts a repository with such a name into a website.
+Step-by-step instructions for this on the command line are on the next slide.</p>
+<p>Note that this means you need a separate repository for your source code!
+For example we have the source code for the group's blog in: https://github.com/Data-Science-for-Scientists-ATL/DataSci4ScienceATL-blog-source
+And the "output" gets pushed to a different repository: https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io</p>
+<p>so once you have set up the separate repository for your User Page, you'd push to it like so:
+(pelican-blog) $ pelican content -o output -s pelicanconf.py
+(pelican-blog) $ ghp-import output
+(pelican-blog) $ git push git@github.com:elemoine/elemoine.github.io.git gh-pages:master</p>
+<p>if pushing fails, e.g. because you already have content in the repository, you can force it with the -f flag, although be warned that this will write over everything:
+(pelican-blog) $ git push -f git@github.com:elemoine/elemoine.github.io.git gh-pages:master</p>
+<h2>Stylin'</h2>
+<p>One thing I didn't address much in my demo was how to apply themes.
+I always find this confusing for Pelican; it comes with a tool to upload themes but then it basically copies them all to your computer, in such a way that they're not part of any one project.
+I have a feeling that almost everyone modifies themes to some extent, so what would seem more natural to me would be a tool that would copy one individual theme into your project, in a themes subdirectory, so that you could then go ahead and modify it.
+But currently there's no built-in tool to do that, as I remembered after staring at the docs, so I did what some other part of the docs suggests instead, which was to copy all the themes myself to some other place on my computer, and then copy one of those themes to my project folder.<br>
+I went with <code>pelican-bootstrap3</code> because it has a lot of bells and whistles.
+I very much recommmend reading the README.md for <code>pelican-bootstrap3</code>. In particular note that you need to add the following lines to your <code>pelicanconf.py</code> file:</p>
+<div class="highlight"><pre><span></span><span class="n">PLUGIN_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;path/to/plugins&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;i18n_subsites&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">JINJA_ENVIRONMENT</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;extensions&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;jinja2.ext.i18n&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>If you don't do this, you will get a very helpful error message:</p>
+<p>Apparently, I am not the first person to experience this: https://github.com/getpelican/pelican-themes/issues/482</p>
+<p>Anyhow, I based my decision to use <code>pelican-bootstrap3</code> in part on this handy blog post from Christine Doig that explains in detail how she modified her theme. Lots of good ideas there:
+https://chdoig.github.io/create-pelican-blog.html</p>
+<h2>Summary</h2>
+<p>Okay, now you've read a blog post about the meeting of our data science group yesterday about how you set up a your own data science blog, based on a bunch of data science blogs! Now you can set up your own blog and blog about data science blogging! Please let us know when your book comes out and look for much less meta posts from the future, unless this is the only post we ever write.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="/images/avatar.jpg"/>
+        </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="#"><i class="fa fa-@datasci4scienceatl-square fa-lg"></i> @DataSci4ScienceATL</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="https://github.com/Data-Science-for-Scientists-ATL" target="_blank">Our Github org page</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://best.emory.edu/index.html" target="_blank">Atlanta BEST program (original sponsor)</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://www.meetup.com/PyData-Atlanta/" target="_blank">PyData Atlanta</a>
+    </li>
+    <li class="list-group-item">
+      <a href="https://www.meetup.com/Atlanta-Jupyter-User-Group/" target="_blank">Atlanta Jupyter Users Group</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2018 Data Science for Scientists ATL
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+    <script src="/theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>
