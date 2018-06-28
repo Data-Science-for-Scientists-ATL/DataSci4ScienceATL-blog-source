@@ -119,13 +119,15 @@ For example we have the source code for the group's blog in: https://github.com/
 And the "output" gets pushed to a different repository: https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io
 
 so once you have set up the separate repository for your User Page, you'd push to it like so:
+```
 (pelican-blog) $ pelican content -o output -s pelicanconf.py
 (pelican-blog) $ ghp-import output
-(pelican-blog) $ git push git@github.com:elemoine/elemoine.github.io.git gh-pages:master
-
+(pelican-blog) $ git push https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io gh-pages:master
+```
+In the last line above, you are using git to *push* to your separate repository, specifically you're pushing the contents of the `gh-pages` branch of your **source** repository **to** the `master` branch of your `Username.github.io` repository. That's why at the end of the line you write 
 
 if pushing fails, e.g. because you already have content in the repository, you can force it with the -f flag, although be warned that this will write over everything:
-(pelican-blog) $ git push -f git@github.com:elemoine/elemoine.github.io.git gh-pages:master
+`(pelican-blog) $ git push -f https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io gh-pages:master`
 
 ## Stylin'
 One thing I didn't address much in my demo was how to apply themes.
@@ -150,3 +152,12 @@ https://chdoig.github.io/create-pelican-blog.html
 
 ## Summary
 Okay, now you've read a blog post about the meeting of our data science group yesterday about how you set up a your own data science blog, based on a bunch of data science blogs! Now you can set up your own blog and blog about data science blogging! Please let us know when your book comes out and look for much less meta posts from the future, unless this is the only post we ever write.
+
+## Helpful links + more reading
+
+- get Anaconda here, with the conda command-line tool for managing packages and installing libraries (including many scientific libraries): https://www.anaconda.com/download/
+- pelican themes: http://pelicanthemes.com/
+- how to use themes: https://github.com/getpelican/pelican-themes#using-themes
+- good example of why you would use virtual environments: https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
+- all about Markdown: https://daringfireball.net/projects/markdown/
+- using ghp-import to publish to Github (from Pelican docs): http://docs.getpelican.com/en/stable/tips.html#publishing-to-github
