@@ -1,6 +1,6 @@
 Title: Quick and Easy Data Science Websites
 Date: 2018-06-27
-Category: test
+Category: posts
 Author: David Nicholson
 
 # Quick and Easy Data Science Websites
@@ -80,7 +80,7 @@ Pelican will ask you a series questions about your site. You can safely accept a
 ## write your posts
 I like to write in Markdown, like so ...
 
-```
+```Markdown
 Title: Red, A Network Analysis Library
 Date: 2018-06-27
 Category: test
@@ -124,7 +124,7 @@ so once you have set up the separate repository for your User Page, you'd push t
 (pelican-blog) $ ghp-import output
 (pelican-blog) $ git push https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io gh-pages:master
 ```
-In the last line above, you are using git to *push* to your separate repository, specifically you're pushing the contents of the `gh-pages` branch of your **source** repository **to** the `master` branch of your `Username.github.io` repository. That's why at the end of the line you write 
+In the last line above, you are using git to *push* to your separate repository, specifically you're pushing the contents of the `gh-pages` branch of your **source** repository **to** the `master` branch of your `Username.github.io` repository. That's why at the end of the line you write `gh-pages:master`. Explaining the concept of git branches is beyond the scope of what I feel like writing right now :) but you can read about it in the "helpful links / more reading" section at the end of this post.
 
 if pushing fails, e.g. because you already have content in the repository, you can force it with the -f flag, although be warned that this will write over everything:
 `(pelican-blog) $ git push -f https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io gh-pages:master`
@@ -154,10 +154,11 @@ https://chdoig.github.io/create-pelican-blog.html
 Okay, now you've read a blog post about the meeting of our data science group yesterday about how you set up a your own data science blog, based on a bunch of data science blogs! Now you can set up your own blog and blog about data science blogging! Please let us know when your book comes out and look for much less meta posts from the future, unless this is the only post we ever write.
 
 ## Helpful links + more reading
-
 - get Anaconda here, with the conda command-line tool for managing packages and installing libraries (including many scientific libraries): https://www.anaconda.com/download/
-- pelican themes: http://pelicanthemes.com/
-- how to use themes: https://github.com/getpelican/pelican-themes#using-themes
 - good example of why you would use virtual environments: https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
 - all about Markdown: https://daringfireball.net/projects/markdown/
 - using ghp-import to publish to Github (from Pelican docs): http://docs.getpelican.com/en/stable/tips.html#publishing-to-github
+- branching: what is it? https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+- pelican themes: http://pelicanthemes.com/
+- how to use themes: https://github.com/getpelican/pelican-themes#using-themes
+
