@@ -31,7 +31,7 @@ LINKS = (('Our Github org page',
         )
 
 # Social widget
-SOCIAL = (('@DataSci4ScienceATL', '#'),)
+SOCIAL = (('@DataSci4ScienceATL', 'https://twitter.com/datasci4sciATL?lang=en'),)
 
 DEFAULT_PAGINATION = 10
 
