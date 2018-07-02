@@ -1,9 +1,9 @@
-Title: Quick and Easy Data Science Websites
+Title: Quick and Easy Data Science Websites with Pelican and Github Pages
 Date: 2018-06-27
 Category: posts
 Author: David Nicholson
 
-At our last meeting, I gave a demo of how to make websites about what you're up to in data science. My demo followed the method used by astrophysicist and data scientist extraordinaire [Jake Vanderplas](https://jakevdp.github.io/)--I'll walk you through it below. It lets you avoid the hassle of buying and setting up a space on the web, by taking advantage of [Github Pages](https://pages.github.com/). Many people in the data science and open source software community take the Github Pages route: nuclear physicist [Katy Huff](http://katyhuff.github.io/), bioinformaticist [Nelle Varoquaux](https://nellev.github.io/), neuroscientist [Cyrille Rosant](https://cyrille.rossant.net/), our own [Eva Dyer at Georgia Tech](http://evadyer.github.io/), and even, uh, [me](https://nickledave.github.io/) (shameless plug, sorry). To be meta, I am now writing a blog post about that demo of how to make a blog. And to be even more meta, I made a website for our group by following my own demo. This blog post includes, as a bonus, stuff I remembered and/or figured out as I went through the process of setting up this site.
+At our last meeting, I gave a demo of how to make websites about what you're up to in data science. My demo followed the method used by astrophysicist and data scientist extraordinaire [Jake Vanderplas](https://jakevdp.github.io/). As he describes in a [blog post](https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/), he now generates his site with the Python library [Pelican](https://blog.getpelican.com/). I'll walk you through his approach step-by-step below. It lets you avoid the hassle of buying and setting up a space on the web, by taking advantage of [Github Pages](https://pages.github.com/). Many people in the data science and open source software community take the Github Pages route: nuclear physicist [Katy Huff](http://katyhuff.github.io/), bioinformaticist [Nelle Varoquaux](https://nellev.github.io/), neuroscientist [Cyrille Rosant](https://cyrille.rossant.net/), our own [Eva Dyer at Georgia Tech](http://evadyer.github.io/), and even, uh, [me](https://nickledave.github.io/) (shameless plug, sorry). To be meta, I am now writing a blog post about my demo of how to make a blog. And to be even more meta, I made a website for our group by following my own demo. This blog post includes, as a bonus, stuff I remembered and/or figured out as I went through the process of setting up this site.
 
 ## high-level overview
 
@@ -24,12 +24,12 @@ Some of the items in the list are more tongue-in-cheek then others.
 
 Apparently I like lists. Here's another! I'll give detail for each step below. Note again that my instructions here are based on the Jake Vanderplas approach, as he outlines in [this blog post](https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/) and in the README for the source code for his blog, which he has helpfully made public in a [Github repository](https://github.com/jakevdp/jakevdp.github.io-source). (For a slightly different approach, check out this [walkthrough](https://cyrille.rossant.net/pelican-github/) by Cyrille Rossant.)
 
-1. make sure you have git installed for version control, and so you can take advantage of Github
+1. make sure you have git installed for version control, and so you can take advantage of Github Pages
 2. make a virtual environment for the software libraries you'll use to blog
   > - pelican: a static website generator written in Python
   > - jupyter to create notebooks
   > - ghp-import: a script that lets you use Github Pages to host your site by doing all the work for you
-  > - some other tools that make it easy to use pelican and jupyter (Markdown, etc.)
+  > - some other tools that make it easy to use pelican and jupyter (Markdown, pelican-plugins)
 3. set up a folder that will contain your blog, and initialize a git repository inside it
 4. use `pelican-quickstart` command to quickly start a project (your blog)
 
