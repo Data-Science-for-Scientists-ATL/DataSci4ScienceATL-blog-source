@@ -50,5 +50,9 @@ JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }
 
+# for using bootswatch themes, as explained in theme README
 THEME = './themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'spacelab'
+
+# constants that add info to posts like author and date modified
+SHOW_ARTICLE_AUTHOR = True
