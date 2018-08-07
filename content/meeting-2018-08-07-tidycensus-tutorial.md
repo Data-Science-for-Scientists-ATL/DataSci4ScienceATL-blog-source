@@ -1,4 +1,4 @@
-Title: Where are Iranians in America? (And good Iranian food). Tutorial from Trent Ryan
+Title: Where are Iranians in America? (And good Iranian food). Interactive visualization tutorial from Trent Ryan
 Date: 2018-08-07
 Category: posts
 Author: David Nicholson
