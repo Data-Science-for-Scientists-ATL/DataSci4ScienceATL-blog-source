@@ -7,3 +7,6 @@ output
 # Python temp files
 __pycache__
 *.pyc
+
+# pycharm
+.idea/
