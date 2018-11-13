@@ -22,13 +22,15 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Our Github org page',
 		  'https://github.com/Data-Science-for-Scientists-ATL'),
+         ('Our calendar',
+          'https://calendar.google.com/calendar/embed?src=57ab7njdu76p171pljatvs8gts%40group.calendar.google.com&ctz=America%2FNew_York'),
          ('Atlanta BEST program (original sponsor)',
           'http://best.emory.edu/index.html'),
          ('PyData Atlanta',
           'https://www.meetup.com/PyData-Atlanta/'),
          ('Atlanta Jupyter Users Group',
           'https://www.meetup.com/Atlanta-Jupyter-User-Group/'),
-        )
+         )
 
 # Social widget
 SOCIAL = (('@DataSci4ScienceATL', 'https://twitter.com/datasci4sciATL?lang=en'),)
