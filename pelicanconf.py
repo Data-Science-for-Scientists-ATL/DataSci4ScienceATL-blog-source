@@ -45,7 +45,7 @@ DEFAULT_PAGINATION = 10
 # tell pelican-bootstrap3 theme where to find our header and avatar
 STATIC_PATHS = ['images']
 BANNER = "images/header.jpg"
-AVATAR = "images/avatar.jpg"
+AVATAR = "images/datasci_logo_v5-01.png"
 
 # below because pelican-bootstrap3 theme expects i18n plugin
 PLUGIN_PATHS = ['./plugins/pelican-plugins', ]
