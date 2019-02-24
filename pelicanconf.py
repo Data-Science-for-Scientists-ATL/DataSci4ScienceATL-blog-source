@@ -21,9 +21,11 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Our Github org page',
-		  'https://github.com/Data-Science-for-Scientists-ATL'),
+          'https://github.com/Data-Science-for-Scientists-ATL'),
          ('Our calendar',
           'https://calendar.google.com/calendar/embed?src=57ab7njdu76p171pljatvs8gts%40group.calendar.google.com&ctz=America%2FNew_York'),
+         ('Emory OrgSync page',
+          'https://orgsync.com/177623/chapter'),
          ('Atlanta BEST program (original sponsor)',
           'http://best.emory.edu/index.html'),
          ('PyData Atlanta',
