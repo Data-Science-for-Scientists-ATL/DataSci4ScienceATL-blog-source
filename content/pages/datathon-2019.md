@@ -1,4 +1,7 @@
-# Data Science for Scientists ATL 2019 Datathon
+Title: Data Science for Scientists ATL 2019 Datathon
+Date: 2019-04-15
+Author: David Nicholson
+
 ## Overview
 
 The Atlanta metro area faces public health challenges that are unique to the South.
