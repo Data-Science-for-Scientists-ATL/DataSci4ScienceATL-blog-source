@@ -85,7 +85,7 @@ Pelican will ask you a series questions about your site. You can safely accept a
 ## write your posts
 I like to write in Markdown, which looks like this:
 
-![image of Markdown example]({filename}/images/markdown_example.jpg)
+![image of Markdown example]({static}/images/markdown_example.jpg)
 
 To be totally precise, I like to write in syntax that can be parsed by the Markdown library, which converts text to the html understood by web browsers. (You can read more about Markdown in <a id="footnote-3-ref" href="#footnote-3" title="link to footnote 3" style="display: inline">"helpful links"</a>). Hardcore Pythonistas using Pelican also have the option of writing in RestructuredText, a language created for Python docs.
 
