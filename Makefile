@@ -10,7 +10,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-GITHUB_PAGES_REMOTE=https://github.com/Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io gh-pages:master
+GITHUB_PAGES_REMOTE=git@github.com:Data-Science-for-Scientists-ATL/Data-Science-for-Scientists-ATL.github.io
 GITHUB_PAGES_BRANCH=master
 
 GIT_COMMIT_HASH = $(shell git rev-parse HEAD)
